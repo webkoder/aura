@@ -1,0 +1,25 @@
+{
+  "name": "aura",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "docker-compose -f infra/docker-compose.yml up",
+    "dev:api": "pnpm --filter api dev",
+    "dev:web": "pnpm --filter web dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "test:watch": "pnpm -r test:watch",
+    "prisma:migrate": "pnpm --filter api prisma migrate dev",
+    "prisma:studio": "pnpm --filter api prisma studio",
+    "generate:openapi": "pnpm --filter contracts generate:openapi"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
