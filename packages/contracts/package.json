@@ -1,0 +1,14 @@
+{
+  "name": "@aura/contracts",
+  "version": "1.0.0",
+  "description": "Shared types and interfaces between services",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
