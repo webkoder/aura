@@ -2,6 +2,10 @@
   "name": "aura",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "dev": "docker-compose -f infra/docker-compose.yml up",
     "dev:api": "pnpm --filter api dev",

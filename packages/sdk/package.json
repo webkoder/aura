@@ -1,0 +1,17 @@
+{
+  "name": "@aura/sdk",
+  "version": "1.0.0",
+  "description": "SDK to interact with REST APIs, used by the frontend",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aura/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
